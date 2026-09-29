@@ -1,0 +1,28 @@
+import java.util.*;
+class StudentDetails{
+	String name;
+	int usn;
+public void accept(){
+	Scanner sc=new Scanner(System.in);
+	usn=sc.nextInt();
+	name=sc.next();
+}
+	public void display(){
+		System.out.println("USN:"+usn);
+		System.out.println("Name:"+name);
+	}
+}
+public class Student{
+	public static void main(String[] args){
+		StudentDetails s1=new StudentDetails();
+		StudentDetails s2=new StudentDetails();
+		StudentDetails s3=new StudentDetails();
+		s1.accept();
+		s1.display();
+		s2.accept();
+		s2.display();
+		s3.accept();
+		s3.display();
+	}
+
+}
